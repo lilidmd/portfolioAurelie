@@ -3,32 +3,36 @@
 require_once "config.php";
 if(!isset($_GET['pg'])){
 
-    include_once "import/Acceuil.php";
+    include_once "accueil.php";
 }else{
     
     switch($_GET['pg']){
         case "cv":  
-     
-            include_once "import/cv.php";
+       include_once "cv.php";
             break;
         case "tuto":
             
-            include_once "import/Tuto.php";
-            break;
-        default:    
+            include_once "tuto.php";
+            break; 
+        case "galerie":
        
-            include_once "import/Accueil.php";
-          
+            include_once "galerie.php";
+          break;
         case "menu":  
              
-             include_once "import/menu.php";
+             include_once "menu.php";
              break;
          case "liens":  
              
-                include_once "import/Liens.php";
+                include_once "liens.php";
                 break;
-         
+
+                default:    
+             
+                include_once "accueil.php";
+
+        }
 
     }
-}
+
 
