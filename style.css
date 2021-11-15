@@ -1,20 +1,16 @@
         body
-        {background-color:rgb(27, 26, 26);
-         background-repeat: no-repeat;
-         background-size: cover; 
-
-
-        }
+        {background-color:rgb(248, 232, 232);
+         }
         #menu{
-            margin: 10px;
-            padding: 100px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
-            font-size: x-large;
+            margin:left;
+            padding: left;
+            font-family: monospace;
+            font-size: 30px;
             width: 150%;
             margin: 20px auto 60px auto;
             background-color:transparent;
             position: sticky;
-            top: 300px;
+            (top: 100px;)
             text-align: center;
         }
         
@@ -38,35 +34,63 @@
         nav a{
             display: block; /*Toute la surface sera cliquable*/
             text-decoration: none;
-            color: #AE3468;
-            border-bottom: 20px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+            color:black;
+           /* border-bottom: 20px solid ;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
             padding: 25px 100px;/*Agrandit le menu et espace la bordure du texte*/
         }
         
         nav a:hover{
             color: #AE3468;
-            border-bottom: 2px solid #b9dfb0;/*couleur souligner menu*/
+            border-bottom: 2px solid #080808;/*couleur souligner menu*/
+            border-top: 10px;
+           
             
             
             }
         
-        .conteneur{
+        /*.conteneur{
           margin: 0px 20px;
           height: 1500px;
-          position: relative;
-
-
-
-          
+          position: relative; 
         }
-
+*/
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width:800px;
+            width:600px;
+            text-align: center;
 
-         }
+        }
+
+        .galerie {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          
+          .galerie img {
+            border: 2px solid black;
+            padding: 5px;
+            /* on annule la hauteur fixe des images
+              max-height: 350px;*/
+            width: 50%;
+            height: auto;
+            /* la hauteur des photos va s'adapter automatiquement pour garder à l'image le bon rapport de proportion entre la largeur et la hauteur, et donc les photos ne seront pas déformées. */
+          }
+          
+          .galerie figcaption {
+            text-align: center;
+            font-size: 18px;
+          }
+          
+          .galerie {
+            display: grid;
+            /* 3. définir le nombre de rangées (row) et de colonnes (column) */
+            grid-template-columns: 1fr;
+            width: 90%;
+            margin: 20px auto;
+          }
+        
+
          
 
         

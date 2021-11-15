@@ -13,7 +13,7 @@
 <?php
 include "menu.php";
 ?>
-<img src="image/demulder.png" alt="aurelie"/>
+<img src="image/dmd.png" alt="aurelie"/>
 
 
 
