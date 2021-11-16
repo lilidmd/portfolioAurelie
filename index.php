@@ -12,7 +12,8 @@ if(!isset($_GET['pg'])){
             break;
         case "tuto":
             
-            include_once "tuto.php";
+          
+         include_once "tuto.php";
             break; 
         case "galerie":
        
