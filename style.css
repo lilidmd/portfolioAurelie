@@ -9,9 +9,10 @@
          body,h1 {
            font-family: Arial, Helvetica, sans-serif;
          }
-
-         
-
+        
+         #form1 {
+           font-size: 50px;
+         }
         #menu{
             margin:left;
             padding: left;
@@ -21,15 +22,12 @@
             margin: 20px auto 60px auto;
             background-color:transparent;
             position: sticky;
-            (top: 100px;)
-            text-align: center;
+            text-align:center;
         }
-        
         nav ul{
             list-style-type: none;
         }
-        
-        nav li{
+         nav li{
             float: left;
             width: 10%;/*100% divisé par le nombre d'éléments de menu*/
             text-align: center;/*Centre le texte dans les éléments de menu*/
@@ -53,10 +51,7 @@
         nav a:hover{
             color: #AE3468;
             
-            border-top: 10px;
-           
-            
-            
+            border-top: 10px
             }
         
         
@@ -64,11 +59,22 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width:600px;
+            width:500px;
             text-align: center;
+         
 
         }
-
+        .dmdlili{
+          width:300px;
+          border-radius:50%;
+          text-align: center;
+          color: #AE3468;
+          border: solid 10px;
+        }
+        .contactus
+        {
+          border: solid 3px black ;
+        }
         .galerie {
             grid-template-columns: 1fr 1fr;
           }
@@ -98,7 +104,7 @@
 
           .liens {
             text-align: center;
-            font-size: 18px;
+            font-size: 25px;
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             
 
@@ -106,7 +112,33 @@
        texte {
             text-align: center;
           }
-        
+          .polling_message {
+            color: white;
+            float: left;
+            margin-right: 2%;
+          }
+          
+          .view_port {
+            background-color: black;
+            height: 25px;
+            width: 100%;
+            overflow: hidden;
+          }
+          
+          .cylon_eye {
+            background-color: #AE3468;
+            background-image:linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+            color: white;
+            height: 100%;
+            width: 10%;
+          
+            -webkit-animation: 4s linear 0s infinite alternate move_eye;
+                    animation: 4s linear 0s infinite alternate move_eye;
+          }
+          
+          @-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+                  @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+          
 
          
 

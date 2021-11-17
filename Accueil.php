@@ -13,17 +13,13 @@
 <?php
 include "menu.php";
 ?>
-<img src="image/dmd.png" alt="aurelie"/>
-</br></br></br></br></br>
+<img src="image/dmd.png" alt="aurelie"/> </br></br></br>
+	
+<img class="dmdlili" src="image/dmdlili.png" alt="description de l'image" /></br></br>
 
-
-<p>34 ans ,originaire de Bruxelles ,j'étudie actuellement le web devellopement au CF2M.Je vous propose de découvrir une partie de mon univers au travers de mon portfolio.
+<p>34 ans </br>originaire de Bruxelles ,</br>j'étudie actuellement le web devellopement au CF2M.</br>Je vous propose de découvrir une partie de mon univers au travers de mon portfolio.
 
 </p>
-
-
-
-
 <header>
 
 </header>
