@@ -1,0 +1,48 @@
+.menu_hamburger {
+    background-color: #A90331;
+    width : 250px;      /* fenÃªtre du menu est de 250px de large */
+    height : auto;
+    padding: 10px;
+
+    position:fixed;  /* la fenÃªtre semble Ãªtre sÃ©parÃ©e du reste du code */
+    z-index: 5;         /* la fenÃªtre est au-dessus du reste de la page (banniere) */
+
+    top : 60px;         /* je dÃ©cale la fenÃªtre du menu pour Ãªtre sous le bouton */
+
+    /* comme la fenÃªtre du menu est de 250px de large, si la position en y (left) est au dÃ©part nÃ©gative alors cette fenÃªtre est cachÃ©e. 
+    Si on veut la faire rÃ©apparaÃ®tre, il faudra donner une valeur positive, ce qu'on fera dans la sÃ©lecteur suivant */
+    left:-270px;        
+
+    /* transition pour faire disparaÃ®tre le menu */
+    transition: left 500ms ease 0ms;
+
+}
+
+/* pour afficher la fenÃªtre du menu */
+.menu_hamburger.affiche {
+    /* En donnant une valeur de 0px, on fait apparaÃ®tre le menu */
+    left:0px;
+
+    /* transition pour faire apparaÃ®tre le menu */
+    transition: left 1s linear 0s;
+}
+
+
+.menu_hamburger ul li {
+    list-style: none;       /* les puces de la liste sont effacÃ©es */
+}
+
+.menu_hamburger ul li a {
+    text-decoration: none;  /* le soulignÃ© des liens est effacÃ© */
+    color:white;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hamburger {
+    display: block;     /* transformer l'image (inline) en block */
+    position: fixed;
+    top : 0px;
+    left: 0px;
+    z-index:10;   
+    width: 55px;
+}

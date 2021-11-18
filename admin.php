@@ -7,13 +7,13 @@
     <link href="menu.css" type="text/css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
- 
 </head>
-<body>
-    
 
 <?php
 include "menu.php";
 ?>
+
+<body>
+    
 </body>
 </html>
