@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     
-    <title>Document</title>
+    <title>Liens</title>
 </head>
 <body>
     
 <?php
-include "./menu.php";
+include "menu.php";
 ?>
 
 <nav class="liens">

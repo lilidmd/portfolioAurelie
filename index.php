@@ -1,39 +1,55 @@
 <?php
 
 require_once "config.php";
-if(!isset($_GET['pg'])){
 
-    include_once "accueil.php";
-}else{
-    
-    switch($_GET['pg']){
-        case "cv":  
-       include_once "cv.php";
+if (!isset($_GET['page'])) {
+
+    include_once "page/accueil.php";
+
+} else {
+
+    switch ($_GET['page']) {
+
+        case "cv":
+
+            include_once "page/cv.php";
+
             break;
-        case "tuto":
-            
-          
-         include_once "tuto.php";
-            break; 
-        case "galerie":
-       
-            include_once "galerie.php";
-          break;
-        case "menu":  
-             
-             include_once "menu.php";
-             break;
-         case "liens":  
-             
-                include_once "liens.php";
+            case "admin":
+
+                include_once "page/admin.php";
+    
                 break;
+    
 
-                default:    
-             
-                include_once "accueil.php";
+        case "tuto":
 
-        }
+            include_once "page/tuto.php";
+
+            break;
+
+        case "liens":
+
+            include_once "page/liens.php";
+
+            break;
+
+        case "contact":
+
+            include_once "page/contact.php";
+
+            break;
+
+        case "galerie":
+
+            include_once "page/galerie.php";
+
+            break;
+
+        default:
+
+            include_once "page/accueil.php";
 
     }
 
-
+}

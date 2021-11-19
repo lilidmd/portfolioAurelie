@@ -15,7 +15,7 @@
 </head>
 <body>
 <?php
-include "./menu.php";
+include "menu.php";
 ?>
 
 <h1>  Comment ajouter une police personnalisée? </h1>
